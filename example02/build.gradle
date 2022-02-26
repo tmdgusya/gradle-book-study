@@ -1,0 +1,14 @@
+task example2 {
+    //처리문
+    def id = 'gradle'
+
+    // 스크립트 블록
+    repositories {
+        mavenCentral()
+    }
+}
+
+task idCheck {
+    def id = 'check'
+    println 'id : ' + id
+}
