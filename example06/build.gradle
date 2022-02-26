@@ -1,0 +1,20 @@
+task exeTask {
+    doLast {
+        println '>>> exeTask task'
+    }
+}
+
+exeTask.doFirst{
+    println '>>> exeTask doFirst'
+}
+
+exeTask.doLast{
+    println ">>> exeTask doLast - End : $exeTask.name"
+}
+
+/*
+ * result 
+ * >>> exeTask doFirst
+ * >>> exeTask task
+ * >>> exeTask doLast - End : exeTask
+ */
