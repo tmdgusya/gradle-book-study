@@ -1,0 +1,22 @@
+// ext {
+//         extProp1 = 'prop1'
+//         extProp2 = 'prop2'
+// }
+
+task printSystemProps {
+    println System.properties['message']
+}
+
+task printExtProps {
+    ext {
+        extProp1 = 'prop1'
+        extProp2 = 'prop2'
+    }
+    println "확장 속성값 1 : ${ext.extProp1}"
+    println "확장 속성값 2 : ${ext.extProp2}"
+}
+
+/*
+ * ext 또한 로컬안에 종속된다.
+ * 그래서 가장 위에 적은 것 처럼 하면 printExtProps 안에서 찾지를 못함.
+ */
