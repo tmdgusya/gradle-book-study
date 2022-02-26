@@ -1,0 +1,9 @@
+3.times {
+    counter -> task "exeTask$counter" {
+        doLast { // gradle 5.0 이상 버전 부터 LeftShift 는 Deprecated 되었음.
+            println "task counter : $counter"
+        }
+    }
+}
+
+exeTask1.dependsOn exeTask0,exeTask2
