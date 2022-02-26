@@ -16,6 +16,10 @@ task printExtProps {
     println "확장 속성값 2 : ${ext.extProp2}"
 }
 
+task printGradleProperties {
+    println msg
+}
+
 /*
  * ext 또한 로컬안에 종속된다.
  * 그래서 가장 위에 적은 것 처럼 하면 printExtProps 안에서 찾지를 못함.
