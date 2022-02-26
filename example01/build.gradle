@@ -1,3 +1,15 @@
 task hello {
     println "Hello Gradle!"
+
+    // closer 사용
+    def id = { closer -> println "id , $closer" }
+
+    // call() 이용한 사용
+    id.call('roach')
+
+    // using normal method
+    id('normal method')
+
+    // 괄호 생략
+    id 'test'
 }
