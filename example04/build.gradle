@@ -1,0 +1,9 @@
+task exeTask1 {
+    String strOutput = 'Have a Good Day'
+    println "1. String Change : ${strOutput.toUpperCase()}"
+    println "2. String Change : ${strOutput.toLowerCase()}"
+}
+
+task exeTask2 {
+    10.times {println "$it"}
+}
