@@ -1,0 +1,13 @@
+task userInfo {
+    ext.userName = "John"
+    ext.userAge = "20"
+    ext.userGen = "Men"
+}
+
+task exeTask {
+    doLast {
+        println "Name : " + userInfo.userName
+        println "Age : " + userInfo.userAge
+        println "Gen : " + userInfo.userGen
+    }
+}
