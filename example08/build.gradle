@@ -1,0 +1,23 @@
+defaultTasks = ['extTask01', 'exeTask02']
+
+project.description = 'Project Object Description'
+project.version = 'exeTask v1.0'
+
+task exeTask01 {
+    doLast {
+        println "Project Name : ${project.name}"
+        println "Project description : ${project.description}"
+        println "Project group : ${project.group}"
+        println "Project path : ${project.path}"
+        println "Project projectDir : ${project.projectDir}"
+        println "Project status : ${project.status}"
+        println "Project state : ${project.state}"
+        println "Project version : ${project.version}"
+    }
+}
+
+task exeTask02 {
+    doLast {
+        println project.description
+    }
+}
